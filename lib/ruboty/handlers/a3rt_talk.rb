@@ -1,4 +1,4 @@
-require 'a3rt-talk'
+require 'a3rt/talk'
 
 module Ruboty
   module Handlers
