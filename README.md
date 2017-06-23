@@ -1,8 +1,7 @@
 # Ruboty::A3rtTalk
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruboty/a3rt_talk`. To experiment with that code, run `bin/console` for an interactive prompt.
+Talk with you if given message didn't match any other handlers.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this line at the *bottom* of your ruboty's Gemfile.
+
+```
+gem 'ruboty-a3rt_talk'
+```
 
 ## Development
 
