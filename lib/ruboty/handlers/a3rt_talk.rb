@@ -15,7 +15,7 @@ module Ruboty
       def talk(message)
         query = message[:body]
         resp = A3rt::Talk.talk(query, api_key)
-        message.reply(resp.reply)
+        message.reply(resp.least_perplex.reply)
       end
 
       def api_key
