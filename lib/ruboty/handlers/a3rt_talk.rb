@@ -15,7 +15,11 @@ module Ruboty
       def talk(message)
         query = message[:body]
         resp = A3rt::Talk.talk(query, api_key)
-        message.reply(resp.least_perplex.reply)
+        if resp.success?
+          message.reply(resp.least_perplex.reply)
+        else
+          message.reply("A3RT Talk API returned an error response: #{resp.message})")
+        end
       end
 
       def api_key
